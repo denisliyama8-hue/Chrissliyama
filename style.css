@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f9ff;
+    margin: 0;
+}
+
+nav {
+    background-color: #0066cc;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 8px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #0066cc;
+}
+.services-preview {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-preview h2 {
+    color: #0066cc;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px gray;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card .icon {
+    font-size: 45px;
+}
+
+.service-card h3 {
+    color: #0066cc;
+}
+
+.service-card p {
+    color: #555;
+}
+
+.view-services {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #0066cc;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f5f9fc;
+}
+
+.home h1 {
+    font-size: 40px;
+}
+
+.home p {
+    font-size: 22px;
+}
+
+.button {
+    background: #0077b6;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.home img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+.contact img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.contact-image {
+    width: 60pxpx !important;
+    height: 60px !important;
+    object-fit: cover;
+    border-radius: 10px;
+}.contact-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background: #0077b6;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.home {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.home button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #0077b6;
+    color: white;
+    font-size: 16px;
+}
+.appointment-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.appointment-btn:hover {
+    background: #005f8d;
+}
+.appointment-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.appointment-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.appointment-form textarea {
+    height: 100px;
+}
+
+.appointment-form button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #0077b6;
+    color: white;
+    font-size: 16px;
+}
+.whatsapp-btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.home h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}

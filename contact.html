@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - LIYAMA DENTAL CLINIC</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f9ff;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #0066cc;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        .contact {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px gray;
+        }
+
+        h1 {
+            color: #0066cc;
+        }
+
+        .info {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+          nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #0066cc;
+}
+        }
+      footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+}
+      #contact {
+    padding: 50px 20px;
+    background: #f5f9fc;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    background: white;
+    padding: 25px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+    text-align: left;
+    margin: 18px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #0077b6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #005f8a;
+}
+    </style>
+</head>
+
+<body>
+  <section id="home">
+    <h1>Welcome to My Dental Clinic</h1>
+    <p>Quality dental care for everyone.</p>
+
+    <img src="images/oo.png" class="contact-image" alt="Contact">
+  </section>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="contact">
+
+        <h1>Contact Us</h1>
+
+        <div class="info">
+            📞 <strong>Phone:</strong> 255656445850
+        </div>
+
+        <div class="info">
+            📧 <strong>Email:</strong> denisliyama8@gmail.com.com
+        </div>
+
+        <div class="info">
+            📍 <strong>Location:</strong> Dar es Salaam, Tanzania
+        </div>
+
+        <a class="whatsapp"
+           href="https://wa.me/255656445850">
+            💬 Chat on WhatsApp
+        </a>
+
+    </div>
+
+</body>
+  <footer>
+    <h3>LIYAMA DENTAL CLINIC</h3>
+    <p>Healthy Teeth, Beautiful Smile</p>
+    <p>📞 0671137320</p>
+    <p>© 2026 LIYAMA DENTAL CLINIC. All Rights Reserved.</p>
+  </footer>
+</html>
+<h2>Book an Appointment</h2>
+<form class="appointment-form" onsubmit="sendToWhatsApp(); return false;">
+
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="Enter your phone number">
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email">
+
+    <label>Appointment Date</label>
+    <input type="date">
+
+    <label>Message</label>
+    <textarea placeholder="Tell us how we can help you"></textarea>
+
+    <button type="submit">Book Appointment</button>
+
+</form>
+<script>
+function sendToWhatsApp() {
+    const name = document.querySelector('input[type="text"]').value;
+    const phone = document.querySelector('input[type="tel"]').value;
+    const email = document.querySelector('input[type="email"]').value;
+    const date = document.querySelector('input[type="date"]').value;
+    const message = document.querySelector('textarea').value;
+
+    const text =
+        "NEW DENTAL APPOINTMENT%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Email: " + email + "%0A" +
+        "Date: " + date + "%0A" +
+        "Message: " + message;
+
+    window.open("https://wa.me/255671137320?text=" + text, "_blank");
+}
+</script>
+<a href="https://wa.me/255671137320" class="whatsapp-btn">
+    Chat with us on WhatsApp
+</a>

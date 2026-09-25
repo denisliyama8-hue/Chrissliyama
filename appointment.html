@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Appointment</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f9ff;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #0066cc;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        .form-box {
+            background-color: white;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px gray;
+        }
+
+        h1 {
+            color: #0066cc;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 13px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="form-box">
+
+        <h1>Book Appointment</h1>
+
+    <form onsubmit="bookAppointment(event)">
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="07XXXXXXXX">
+
+            <label>Select Service</label>
+            <select>
+                <option>Dental Check-up</option>
+                <option>Teeth Cleaning</option>
+                <option>Teeth Whitening</option>
+                <option>Tooth Filling</option>
+                <option>Tooth Extraction</option>
+            </select>
+
+            <label>Appointment Date</label>
+            <input type="date">
+
+            <label>Appointment Time</label>
+            <input type="time">
+
+            <button type="submit">
+                Book Appointment
+            </button>
+
+        </>
+
+    </div>
+
+</body>
+  <script>
+    function bookAppointment(event) {
+        event.preventDefault();
+
+        alert("Appointment request received!");
+    }
+  </script>
+
+</html>
